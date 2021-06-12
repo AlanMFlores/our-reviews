@@ -1,0 +1,174 @@
+/* ----- Global Styles ----- */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+    color: #333;
+    background-color: #F2F7FE;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+/* ----- Variables ----- */
+
+:root {
+
+    /* Colors */
+
+    --dark-color: #333;
+    --white-color: #fafafa;
+    --blue: #6DA3C6;
+    --light-blue: #65B0DB;
+
+}
+/* ----- Main Styles ----- */
+
+.main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-container {
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+    font-size: 2.8rem;
+}
+
+.bar {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    width: 80px;
+    background-color: #6DA3C6;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.card {
+    padding: 25px;
+    margin: 0 auto;
+    width: 45%;
+    box-shadow: 0 0 5px #ccc;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* ----- Card Image ----- */
+
+.card-img {
+    position: relative;
+    margin: 0 auto;
+    width: 102px;
+    height: 102px;
+    border-radius: 50%;
+    background-color: var(--light-blue);
+}
+
+.card-img figure {
+    position: relative;
+    left: -4px;
+    top: 4px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.card-img figure img {
+    object-fit: contain;
+    width: 100%;
+}
+
+.quotes {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background-color: var(--light-blue);
+    color: var(--white-color);
+    border-radius: 50%;
+}
+
+#author {
+    margin: 20px auto 10px auto;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform:capitalize;
+}
+
+#job {
+    color: var(--blue);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+#info {
+    margin-top: 10px;
+}
+
+/* ----- Buttons Styles ----- */
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.prev-btn, .next-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.prev-btn, .next-btn i {
+    font-size: 1.6rem;
+    color: var(--light-blue);
+}
+
+.random-btn {
+    padding: 3px;
+    border: 1px solid var(--light-blue);
+    color: var(--light-blue);
+    background-color: #F2F7FE;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ----- Media Queries ----- */
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: 90%;
+    }
+}
